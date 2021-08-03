@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="http://redsox.uoa.auckland.ac.nz/ds/logo-192x192.png" />
+    <title>Dunedin Dairy</title>
+    <script src="qvo117.js"></script>
+    <link href="qvo117.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <td><img id="logo" src="http://redsox.uoa.auckland.ac.nz/ds/logo.svg" alt="A picture of the logo" /></td>
+            <td id="homeTab" class="menu" onclick="showHome();">&#x1F3E0;</td>
+            <td id="prodTab" class="menu" onclick="showProducts();">&#x1F6D2;</td>
+            <td id="newsTab" class="menu" onclick="showNews();">&#x1F4F0;</td>
+            <td id="locTab" class="menu" onclick="showLocation();">&#x1F4CC;</td>
+            <td id="commTab" class="menu" onclick="showComments();">&#x1F4D6;</td>
+        </tr>
+    </table>
+
+    <div id="home">
+        <h1>Dunedin Dairy</h1>
+        <hr class="mainLine" />
+        <p>Moooo WELCOME to the Dunedin Dairy, the LEADING online dairy shop in New Zealand!
+            <br />We take PRIDE in sourcing the BEST diary products from within New Zealand and abroad.</p>
+        <p>We are open 24/7, and we provide high QUALITY and FAST deliveries to you.
+            <br />Keeping in mind the safety of you and our staff, our deliveries are contactless.</p>
+        <br />
+        <img src="https://d1poczgreawftx.cloudfront.net/8/w23114_kiddhannah_kiddh23114sacredcow%282019%2901.jpg?i=90716"
+            alt="Image of a cow" width="400" height="400" class="imageCenter" />
+        <p class="smallText">Hannah Kidd - Sacred Cow (2019) Milford Galleries Dunedin</p>
+        <hr width="50%" />
+        <p class="smallText">&copy; All rights reserved V1.0.0</p>
+    </div>
+
+    <div id="products">
+        <h1>Products</h1>
+        <hr class="mainLine" />
+        <br />
+        <input type="text" id="search" width="50" onkeyup="searchProduct()" placeholder="&#x1F50D;" />
+        <table id="productsTab" style="width: 100%;"></table>
+    </div>
+
+    <div id="news">
+        <h1>News</h1>
+        <hr class="mainLine" />
+        <table id="newsfeedTab" style="width: 100%;"></table>
+    </div>
+
+    <div id="location">
+        <h1>Location</h1>
+        <hr class="mainLine" />
+        <img class="imageCenter" src="http://redsox.uoa.auckland.ac.nz/ds/map.png" width="200" />
+        <div id="container">
+            <p id="adr" class="contactInfo"></p>
+            <a id="email" class="contactInfo"></a>
+            <a id="ph" class="contactInfo"></a>
+            <a href="http://redsox.uoa.auckland.ac.nz/ds/DairyService.svc/vcard" id="addContact" class="contactInfo">Add
+                us to your address book</a>
+        </div>
+
+    </div>
+
+    <div id="guestBook">
+        <h1>Guest Book</h1>
+        <hr class="mainLine" />
+        <p>Please sign our guest book!</p>
+        <p>Cheesy comments are OK, so long as they aren't cheesy.</p>
+        <div id="inputContainer">
+            <textarea id="comment" placeholder="Enter your comment here..."></textarea>
+            <br />
+            <br />
+            <label for="name">Your name:</label>
+            <input type="text" id="name" placeholder="Enter your name here" />
+            <br />
+            <br />
+            <input type="submit" value="Submit" onclick="postComment();" />
+
+        </div>
+
+        <h2>Recent Entries</h2>
+        <iframe id="update" src="http://redsox.uoa.auckland.ac.nz/ds/DairyService.svc/htmlcomments">
+    </div>
+</body>
+
+</html>

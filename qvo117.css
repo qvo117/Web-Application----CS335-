@@ -1,0 +1,78 @@
+.menu {
+    cursor: pointer;
+    font-size: x-large;
+    text-align: center;
+}
+#logo {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.smallText {
+    font-size: x-small; 
+    text-align:center;
+}
+#search { 
+    width: 100%;
+    background-color: darkgray;
+}
+a:link {
+    cursor: pointer;
+}
+.imageCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 50%;
+}
+#container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+}
+.contactInfo{
+    text-align: center;
+    display: block;
+} 
+.inline{
+    display: inline;
+}
+table{
+    text-align: center;
+}
+td {
+    text-align: center;
+    width: 50px;
+}
+.left-align {
+    text-align: left;
+}
+#inputContainer {
+    display: block;
+    background-color: lightgray;
+    border-radius: 25px;
+    text-align: center;
+    width: 300px;
+    height:200px;
+    padding: 20px;
+}
+#update {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+textarea {
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+}
+.mainLine {
+    border: 1px solid black;
+    border-radius: 5px;
+}
